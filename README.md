@@ -1,2 +1,5 @@
 # NuScenes-CRN
 在nuScenes数据集上运行CRN模型，调整子集的train和val
+read pkl是从生成的pkl文件中读取信息，并判断当前数据中是否存在相应sample的文件
+read nuscenes是从nuscenes数据集中读取信息，判断当前数据是否存在相应的sample文件，这里用了子集01，共85个scene，因此只循环100次，最终得到子集包含的scene信息
+splits是nuscenes自带的划分train和val的文件，这里根据子集的场景做新的划分
